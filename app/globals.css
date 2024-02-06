@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+@import "../node_modules/@syncfusion/ej2-base/styles/tailwind.css";
+@import "../node_modules/@syncfusion/ej2-buttons/styles/tailwind.css";
+@import "../node_modules/@syncfusion/ej2-popups/styles/tailwind.css";
+@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind.css";
+@import "../node_modules/@syncfusion/ej2-layouts/styles/tailwind.css";
+@import "../node_modules/@syncfusion/ej2-notifications/styles/tailwind.css";
+@import "../node_modules/@syncfusion/ej2-calendars/styles/tailwind.css";
+@import "../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind.css";
+@import "../node_modules/@syncfusion/ej2-inputs/styles/tailwind.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/tailwind.css";
+@import "../node_modules/@syncfusion/ej2-react-grids/styles/tailwind.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #6cb14f;
+  --color-secondary: #2e2d2d;
+
+  --color-background: #fafafa;
+
+  --color-border: #84818a;
+
+  --color-dark: #0b0a0f;
+  --color-dark-secondary: #84818a;
+  --color-main-dark: #2e2c34;
+
+  --color-light-gray: #84818a;
+
+  --color-main-black: #161616;
+
+  --color-accent-blue: #3c8ef9;
+  --color-accent-purple: #9d4edd;
+  --color-accent-green: #34c759;
+  --color-accent-orange: #ff9f38;
+
+  --color-neutral-400: #9c9cab;
+  --color-neutral-500: #717184;
+  --color-neutral-900: #131316;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #6cb14f;
+    --color-secondary: #2e2d2d;
+
+    --color-border: #e4e4e4;
+
+    --color-dark: #0b0a0f;
+    --color-dark-secondary: #84818a;
+    --color-main-dark: #2e2c34;
+
+    --color-light-gray: #84818a;
+
+    --color-main-black: #161616;
+
+    --color-accent-blue: #3c8ef9;
+    --color-accent-purple: #9d4edd;
+    --color-accent-green: #34c759;
+    --color-accent-orange: #ff9f38;
+
+    --color-neutral-400: #9c9cab;
+    --color-neutral-500: #717184;
+    --color-neutral-900: #131316;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.e-table tbody tr:nth-child(even) {
+  @apply bg-[#F8F8F8] !important;
+}
+
+.e-table tbody tr td:nth-child(n + 2),
+.e-columnheader th:nth-child(n + 2) {
+  @apply border-r border-border !important;
+}
